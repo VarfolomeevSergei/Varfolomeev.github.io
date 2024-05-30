@@ -88,4 +88,3 @@ const swiper = new Swiper(".img-slider", {
   initialSlides: 1,
   loop: true,
 });
-

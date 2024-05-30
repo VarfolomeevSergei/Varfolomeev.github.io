@@ -1,19 +1,3 @@
-/*document.getElementById('themeToggle').addEventListener('click',function(){
-    const currentTheme = document.body.className;
-    if (currentTheme==='dark-theme'){
-    document.body.className = 'light-theme';
-    document.className.className = 'light-theme';
-    }else
-    {
-    document.body.className ='dark-theme';
-    document.className.className ='dark-theme';
-    }
-  });
-  */
-
-
-
-  
   var btn = document.getElementById("themeToggle");
   var link = document.getElementById("theme-link");
   
@@ -41,3 +25,4 @@
       link.setAttribute("href", currTheme);
   
   }
+  

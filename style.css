@@ -33,24 +33,7 @@ body {
   );
   font-style: normal;
   font-weight: 400;
-  transition: background-color 0.3s ease;
-
 }
-
-.change-lang {
-  position: fixed;
-  right: 0;
-  top: 60px;
-}
-
-.themeToggle{
-  max-width: 30px;
-  max-height: 60px;
-}
-
-
-
-
 
 main {
   margin: 0 auto;
@@ -97,6 +80,8 @@ header {
   width: 535px;
   /* margin-right: 70px; */
   padding-top: 27px;
+  
+  background-color: white;
 }
 
 .header-information a {
@@ -109,7 +94,6 @@ header {
   line-height: normal;
   height: auto;
 }
-
 
 .header-anchors {
   display: none;
@@ -438,7 +422,7 @@ header {
 }
 
 .section-five-inform div h3 {
-  /*color: #000;*/
+  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 61px;
@@ -452,7 +436,7 @@ header {
 .section-five-inform div p {
   max-width: 185px;
   margin: 0 auto;
-  /*color: #000;*/
+  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 15px;
@@ -672,7 +656,7 @@ header {
 }
 
 .section-six h3 {
-  /*color: #000;*/
+  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 0.55em;
