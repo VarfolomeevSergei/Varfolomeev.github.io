@@ -4,87 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Affiliate</title>
-  <link rel="icon" href="../img" type="image/x-icon">
+  <link rel="icon" href="../assets/images/tools.svg" type="image/x-icon">
   <link rel="stylesheet" href="registration.css">
+  <link rel="stylesheet" href="../media.css" />
+  <link rel="stylesheet" type="text/css" href="dark.css" id="theme-link">  
 </head>
 <body>
-  <header>    
-    <div class="header-container registration">
-      <button id="theme-button"><p id="theme-button-p">🌝</p></button>    
-      <a href="../index.html">Нажмите чтобы назад</a>
+  <header>  
+    <div class="header-container flex-box-between">
+      <a href="../index.html">
+          <div class="header-logo-container">
+          <img src="logo-1.png" alt="" />
+          <img class="header-second-logo" src="logo-2.png" alt="" />
+        
+      </div>
+      </a>
+      <button class="lng-theme" id="themeToggle">Switch theme</button>
+          <select class="select">
+            <option value="ru">RU</option> 
+            <option value="en"selected>EN</option>
+          </select>
+      <div>
+        <button id="blackOverId" class="blackOver"></button>
+        <button id="burger" class="header-button-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header-information flex-box-between">
+          <a class="lng-home1" href="../index.html">HOME</a>
+          <a class="lng-abo" href="../about/about.html">ABOUT</a>
+          <a class="lng-WORK" href="">WORK WITH US</a>
+          <a class="lng-CLIENT" href="../client/client.html">CLIENT WINS</a>
+          <a class="lng-EMPLOYERS" href="../employers/employers.html">EMPLOYERS</a>
+          
+        </div>
+      </div>
     </div>
-  </header>  
-  
+  </header>    
   <main>
     <section class="sign-in">      
-      <h2>Sign in</h2>    
+      <h2 class="lng-sign-in">Sign in</h2>    
       <form action="">
         <div>
-          <label for="login">Login</label>
+          <label for="login" id="login-in-label" ><a class="lng-Login1">Login</a> <span>*</span></label>
           <input type="text" name="login" id="login" required>
         </div>
         <div>
-          <label for="password">Password</label>
+          <label for="password" id="password-in-label" ><a class="lng-password">Password</a> <span>*</span></label>
           <input type="password" name="password" id="password" required>
         </div>
         <div>
-          <button>Sign in</button>
-          <button type="button" id="sign-up-button">Create new account</button>
+          <button type="button" class="hidden lng-Sign-in" id="sign-in-send" >Sign in</button>
+          <button type="button" id="sign-up-button" class="lng-create1">Create new account</button>
         </div>
       </form>       
     </section>      
     <section class="sign-up hidden">
-      <h2>Sign up</h2>    
-      <form action="">
+      <h2 class="lng-Sign-up">Sign up</h2>    
+      <form action=""> 
         <div>
-          <label for="phone">Phone</label>
+          <label for="phone" id="phone-label" ><a class="lng-Phone">Phone</a>  <span>*</span></label>
           <input type="number" name="phone" id="phone" required>
         </div>
         <div>
-          <label for="email">Email</label>
+          <label for="email" id="email-label"><a class="lng-Email" >Email</a> <span>*</span></label>
           <input type="email" name="email" id="email" required>
         </div>
         <div>
-          <label for="birth-date">Birth date</label>
+          <label for="birth-date" id="birthday-label"  ><a class="lng-Birth-date">  Birth date</a> <span>*</span></label>
           <input type="date" name="birth-date" id="birth-date" required>
         </div>
         <div>
-          <label for="name">Name</label>
+          <label for="name" id="name-label"><a class="lng-Name">  Name </a><span>*</span></label>
           <input type="text" name="name" id="name" required>
         </div>
         <div>
-          <label for="surname">Surname</label>
+          <label for="surname" id="surname-label"> <a class="lng-Surname">Surname </a><span>*</span></label>
           <input type="text" name="surname" id="surname" required>
         </div>
         <div>
-          <label for="patronymic">Patronymic</label>
+          <label for="patronymic" class="lng-Patronymic">Patronymic</label>
           <input type="text" name="patronymic" id="patronymic" optional>
         </div>        
         <div>
-          <label for="create-login">Login</label>
+          <label for="create-login" id="login-up-label" class="lng-Login2">Login <span>*</span></label>
           <input type="text" name="create-login" id="create-login" optional>
+          <button type="button" id="generate-login-button" class="lng-Generate-login">Generate login</button>
         </div>
         <div>
-          <label for="create-password">Password</label>
+          <label for="create-password" id="password-up-label" class="lng-password2">Password <span>*</span></label>
           <input type="password" name="create-password" id="create-password" required>
+          <button type="button" id="visible-password-button">👁</button>
+          <button type="button" id="generate-password-button" class="lng-Generate-password">Generate password</button>
         </div>
         <div>
-          <label for="confirm-password">Confirm password</label>
+          <label for="confirm-password" id="confirm-password-label"><a class="lng-Confirm"> Confirm password </a>  <span>*</span></label>
           <input type="password" name="confirm-password" id="confirm-password" required>
         </div>
         <div>
-          <label for="terms-of-use">I read and agree with <a href="#">terms of use</a></label>
+          <label for="terms-of-use" id="terms-of-use-label" ><a class="lng-i-read-and">I read and agree with </a><a href="#" class="lng-termsofuse">terms of use</a> <span>*</span></label>
           <input type="checkbox" name="terms-of-use" id="terms-of-use" required>
         </div>
         <div>
-          <button>Sign up</button>
-          <button type="button" id="sign-in-button">Login as existing account</button>
+          <button type="button" class="hidden lng-sign-up1" id="sign-up-send">Sign up</button>
+          <button type="button" id="sign-in-button" class="lng-Login-as-existing">Login as existing account</button>
         </div>
       </form>             
     </section>  
+
+
+
+    <footer id="футер">
+      <section class="footer-section">
+        <div class="footer-section-first-container">
+          <div class="footer-section-container flex-box-between">
+            <div class="footer-section-left-container">
+              <h5 class="lng-sign-up-if-you">Sign up if you want pure gold in your inbox.</h5>
+              <p>© Copyright Isimemen 2022</p>
+            </div>
+            <div class="footer-section-right-container">
+              <p class="lng-Company">Company</p>
+              <a class="lng-About" href="">About</a>
+              <a class="lng-Fulfilled" href="">Fulfilled Coaching Program</a>
+              <a class="lng-Client" href="">Client Wins</a>
+              <a class="lng-Press" href="">Press & Media</a>
+              <a class="lng-Privacy" href="">Privacy</a>
+              <a class="lng-Terms" href="">Terms & Conditions</a>
+              <a class="lng-Brand" href="">Brand Design by Provoke</a>
+            </div>
+          </div>
+        </div>
+        <div id="blackOver-two"></div>
+        
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="../theme-switcher2.js"></script>
+    <script src="../registration/languages.js"></script>
+    <script src="../lang-switcher2.js"></script>
+
+
+
   </main>
-  <script type="module" src="dark-theme.js"></script>
   <script src="registration.js" type="module"></script>
-  
+  <script src="../script.js"></script>
 </body>
 </html>

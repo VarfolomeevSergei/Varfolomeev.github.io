@@ -61,30 +61,46 @@ const langArr = {
         "en":"We provide purpose-building programs that blend faith, self, and wealth.",
     },
     "section-four-teg" : {
-        "ru":"Наши программы",
-        "en":"Our Programs",
+        "ru":"Лучшие из наших работников",
+        "en":"The best of our workers",
     },
-    
+    ///////////////
     "Individuals" : {
-        "ru":"Личность",
-        "en":"Individuals",
+        "ru":"Специалист по маркетингу",
+        "en":"Marketing Specialist",
+    },
+    "Individuals1" : {
+        "ru":"Тренер по энтузиазму",
+        "en":"Enthusiasm Coach",
     },
 
     "section-four-card-text" : {
         "ru":"Недооценены и недоплачены? Давайте изменим это. Наша программа развития карьеры Fulfilled призвана предоставить вам ресурсы и инструменты, необходимые для того, чтобы не только получить более высокооплачиваемую работу, но и обеспечить ее. ",
-        "en":"Undervalued and underpaid? Let's change that. Our career-development program, Fulfilled, is here to provide you with the resources and tools you need to not only go for a higher-paying job, but secure it. We believe it’s already yours.",
+        "en":"Develop and deliver workshops and training programs on topics related to passion, motivation, and goal setting.",
+    },
+    "section-four-card-text1" : {
+        "ru":"Разрабатывайте и проводите семинары и учебные программы по темам, связанным со страстью, мотивацией и постановкой целей. Обеспечьте индивидуальное обучение и наставничество, чтобы помочь людям определить свои увлечения и разработать стратегии для достижения своих целей.Создавайте и курируйте контент для веб-сайта ISIMEMEN и каналов социальных сетей по темам, связанным с энтузиазмом и личностным ростом. ",
+        "en":"Provide individual coaching and mentoring to help individuals identify their passions and develop strategies for achieving their goals. Create and curate content for the ISIMEMEN website and social media channels on topics related to enthusiasm and personal growth.",
     },
     "section-four-button" : {
         "ru":"Попробуйте сейчас",
         "en":"Reimagine Now",
-    },
+    },//////////////////
     "Employers" : {
-        "ru":"Работодатели",
-        "en":"Employers",
+        "ru":"Специалист по развитию лидерства",
+        "en":"Leadership Development Specialist",
+    },
+    "Employers1" : {
+        "ru":"Менеджер сообщества",
+        "en":"Community Manager",
     },
     "Through" : {
+        "ru":"Разрабатывайте и содействуйте программам развития лидерства для людей на всех уровнях их карьеры. Обеспечьте индивидуальный коучинг и наставничество, чтобы помочь людям развить свои лидерские качества и стиль. ",
+        "en":"Design and facilitate leadership development programs for individuals at all levels of their careers. Provide individual coaching and mentoring to help individuals develop their leadership skills and style. Conduct assessments to identify individual leadership strengths and weaknesses.",
+    },
+    "Through1" : {
         "ru":"С помощью нашей концепции выполненной работы мы консультируем работодателей о том, как лучше позиционировать цветных сотрудников, чтобы раскрыть их потенциал и взять на себя ответственность за свою карьеру.",
-        "en":"Through our Fulfilled Work Framework, we advise employers on how to better position employees of color to unlock their potentialand take ownership of their careers while increasing retention rates all around.",
+        "en":"Создайте активное онлайн-сообщество для членов ISIMEMEN и управляйте им. Содействие онлайн-дискуссиям и мероприятиям. Отвечайте на запросы участников и оказывайте поддержку.",
     },
     "section-four-button2" : {
         "ru":"Читать дальше",
@@ -97,12 +113,25 @@ const langArr = {
     },
 
     "Leaders" : {
-        "ru":"Лидеры",
-        "en":"Leaders",
+        "ru":"Стратег по личному брендингу",
+        "en":"Personal Branding Strategist",
+    },
+    /////////////////
+    "Leaders" : {
+        "ru":"Стратег по личному брендингу",
+        "en":"Personal Branding Strategist",
+    },
+    "Leaders1" : {
+        "ru":"Создатель контента",
+        "en":"Content Creator",
     },
     "we-coach" : {
         "ru":"Мы обучаем лидеров, владельцев бизнеса и влиятельных лиц тому, как максимизировать свою ценность, раскрыть свою силу и добиться успеха. С того места, где мы смотрим, стеклянного потолка нет.",
         "en":"We coach leaders, business owners, and influencers on how to maximize their value, unleash their power, and grow their success. From where we’re looking, there’s no glass ceiling.",
+    },
+    "we-coach1" : {
+        "ru":"Создавайте интересный и информативный контент для веб-сайта, блога и каналов ISIMEMEN в социальных сетях. Проводите исследования и пишите статьи, сообщения в блогах и контент для социальных сетей на темы, связанные с личностным ростом, лидерством и энтузиазмом. Разрабатывайте и производите видео, подкасты и другой мультимедийный контент.",
+        "en":"Create engaging and informative content for the ISIMEMEN website, blog, and social media channels. Conduct research and write articles, blog posts, and social media content on topics related to personal growth, leadership, and enthusiasm. Develop and produce videos, podcasts, and other multimedia content.",
     },
     "we-here" : {
         "ru":"Мы поможем вам превратить каждое «нет», в ещё один ноль в вашей зарплате.",

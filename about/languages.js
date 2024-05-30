@@ -252,6 +252,124 @@ const langArr = {
         "en":"Brand Design by Provoke",
     },
     
+    /*регистрация*/
+    "Login1" : {
+        "ru":"Логин",
+        "en":"Login",
+    },
+    "Login2" : {
+        "ru":"Логин",
+        "en":"Login",
+    },
+    "sign-in" : {
+        "ru":"Войти",
+        "en":"Sign in",
+    },
+    "password" : {
+        "ru":"Пароль",
+        "en":"Password",
+    },
+    "password2" : {
+        "ru":"Пароль",
+        "en":"Password",
+    },
+    "Sign-in" : {
+        "ru":"Войти",
+        "en":"Sign in",
+    },
 
+    "create1" : {
+        "ru":"Создать новый аккаунт",
+        "en":"Create new account",
+    },
     
+    "Sign-up" : {
+        "ru":"Зарегистрироваться",
+        "en":"Sign up",
+    },
+
+
+    "" : {
+        "ru":"",
+        "en":"",
+    },
+    
+    "Phone" : {
+        "ru":"Телефон",
+        "en":"Phone",
+    },
+
+
+
+    "Email" : {
+        "ru":"Электронная почта",
+        "en":"Email",
+    },
+    "Birth-date" : {
+        "ru":"Дата рождения",
+        "en":"Birth date",
+    },
+    "Name" : {
+        "ru":"Имя",
+        "en":"Name",
+    },
+    "Surname" : {
+        "ru":"Фамилия",
+        "en":"Surname",
+    },
+    "Patronymic" : {
+        "ru":"Отчество",
+        "en":"Patronymic",
+    },
+    "Generate-login" : {
+        "ru":"Сгенерировать логин",
+        "en":"Generatelogin",
+    },
+    "Generate-password" : {
+        "ru":"Сгенерировать пароль",
+        "en":"Generate password",
+    },
+    "Confirm" : {
+        "ru":"Подтвердите пароль",
+        "en":"Confirm password",
+    },
+    "i-read-and" : {
+        "ru":"Я прочитал и согласен с ",
+        "en":"I read and agree with ",
+    },
+    "termsofuse" : {
+        "ru":"условиями пользования",
+        "en":"terms of use",
+    },
+    "sign-up1" : {
+        "ru":"Зарегистрироваться",
+        "en":"sign up",
+    },
+    "Login-as-existing" : {
+        "ru":"Войти с помощью существующего аккаунта",
+        "en":"Login as existing account",
+    },
+    "" : {
+        "ru":"",
+        "en":"",
+    },
+    
+    //страница About Us
+
+    "We-are-a-team-of-passionate" : {
+        "ru":"В ISIMEMEN мы верим, что у каждого есть потенциал стать энтузиастом, лидером и личностью. Мы — платформа, призванная помочь людям полностью раскрыть свой потенциал и достичь своих целей.",
+        "en":"At ISIMEMEN, we believe that everyone has the potential to be an enthusiast, a leader, and a personality. We are a platform dedicated to helping individuals unlock their full potential and achieve their goals.",
+    },
+    "Our-team-consists-of-experienced" : {
+        "ru":"Наша команда состоит из опытных создателей мемов, кураторов и энтузиастов. Мы постоянно ищем новейшие и лучшие мемы и постоянно работаем над улучшением нашей платформы.",
+        "en":"Наша запатентованная программа и структуры помогут вам обнаружить свое призвание и воплотить его в жизнь. Мы способствуем прорывам, меняющим жизнь, чтобы помочь вам проявить себя во всех аспектах жизни. Мы здесь, чтобы пройти этот путь вместе с вами. Давайте наполнимся.",
+    },
+    "We-are-committed" : {
+        "ru":"Мы являемся консультантом по развитию карьеры и бизнесу, который стремится помочь вам раскрыть цель вашей жизни. Мы понимаем: путь к открытию себя и карьеры не всегда ясен и может разочаровывать. Вы все сделали правильно — пошли в школу и получили ученые степени, но теперь вы вынуждены сталкиваться с постоянными отказами и соглашаться на работу, которая делает вас недоплачиваемым и неудовлетворенным.",
+        "en":"We are a career development and business consultancy passionate about helping you uncover your life's purpose. We get it - the road to self and career discovery is not always clear and can be frustrating. You did all the right things - went to school and received the degrees, but now you’re forced to face constant rejections and settle for jobs that leave you underpaid and unfulfilled.",
+    },
+    "About-Us2" : {
+        "ru":"О нас",
+        "en":"About Us",
+    },
 }

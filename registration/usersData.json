@@ -1,0 +1,24 @@
+[
+    {
+        "role": "admin",
+        "login": "admin",
+        "password": "admin",
+        "name": "Admin",
+        "surname": "Admin",
+        "patronymic": "Adminovich",
+        "phone": "375123456789",
+        "eMail": "admin@example.com",
+        "birthDay": "1980-01-01"
+    },
+    {
+        "role": "user",
+        "login": "user",
+        "password": "user",
+        "name": "User",
+        "surname": "One",
+        "patronymic": "Userovich",
+        "phone": "375987654321",
+        "eMail": "user1@example.com",
+        "birthDay": "1990-01-01"
+    }
+]
