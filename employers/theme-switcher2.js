@@ -44,3 +44,24 @@ function ChangeTheme() {
     link.setAttribute("href", currTheme);
     localStorage.setItem('theme', theme);
 }
+
+// Получаем элементы логотипов
+const logoImage1 = document.querySelector('.header-logo-container img:first-child');
+const logoImage2 = document.querySelector('.header-logo-container img:last-child');
+
+// Функция для изменения логотипов
+function updateLogos() {
+  if (currTheme === darkTheme) {
+    // Темная тема
+    logoImage1.src = '../img/logo-1-white.png';
+    logoImage2.src = '../img/logo-2-white.png';
+  } else {
+    // Светлая тема
+    logoImage1.src = '../img/logo-1.png';
+    logoImage2.src = '../img/logo-2.png';
+  }
+}
+
+// Вызываем функцию при загрузке страницы и при переключении темы
+window.addEventListener('load', updateLogos);
+btn.addEventListener('click', updateLogos);

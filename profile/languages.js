@@ -252,158 +252,44 @@ const langArr = {
         "en":"Brand Design by Provoke",
     },
     
-    /*регистрация*/
-    "Login1" : {
-        "ru":"Логин",
-        "en":"Login",
-    },
-    "Login2" : {
-        "ru":"Логин",
-        "en":"Login",
-    },
-    "sign-in" : {
-        "ru":"Войти",
-        "en":"Sign in",
-    },
-    "password" : {
-        "ru":"Пароль",
-        "en":"Password",
-    },
-    "password2" : {
-        "ru":"Пароль",
-        "en":"Password",
-    },
-    "Sign-in" : {
-        "ru":"Войти",
-        "en":"Sign in",
-    },
-
-    "create1" : {
-        "ru":"Создать новый аккаунт",
-        "en":"Create new account",
+    "Your-role-is" : {
+        "ru":"Ваша роль ",
+        "en":"Your role is ",
     },
     
-    "Sign-up" : {
-        "ru":"Зарегистрироваться",
-        "en":"Sign up",
-    },
-
-
-    "" : {
-        "ru":"",
-        "en":"",
+    "first-Name" : {
+        "ru":"Имя:",
+        "en":"First name:",
     },
     
-    "Phone" : {
-        "ru":"Телефон",
-        "en":"Phone",
+    "Middle-name" : {
+        "ru":"Фамилия:",
+        "en":"Middle name:",
     },
-
-
-
+    
+    "Last-name" : {
+        "ru":"Отчество:",
+        "en":"Last name:",
+    },
+    
     "Email" : {
-        "ru":"Электронная почта",
-        "en":"Email",
-    },
-    "Birth-date" : {
-        "ru":"Дата рождения",
-        "en":"Birth date",
-    },
-    "Name" : {
-        "ru":"Имя",
-        "en":"Name",
-    },
-    "Surname" : {
-        "ru":"Фамилия",
-        "en":"Surname",
-    },
-    "Patronymic" : {
-        "ru":"Отчество",
-        "en":"Patronymic",
-    },
-    "Generate-login" : {
-        "ru":"Сгенерировать логин",
-        "en":"Generate login",
-    },
-    "Generate-password" : {
-        "ru":"Сгенерировать пароль",
-        "en":"Generate password",
-    },
-    "Confirm" : {
-        "ru":"Подтвердите пароль",
-        "en":"Confirm password",
-    },
-    "i-read-and" : {
-        "ru":"Я прочитал и согласен с ",
-        "en":"I read and agree with ",
-    },
-    "termsofuse" : {
-        "ru":"условиями пользования",
-        "en":"terms of use",
-    },
-    "sign-up1" : {
-        "ru":"Зарегистрироваться",
-        "en":"sign up",
-    },
-    "Login-as-existing" : {
-        "ru":"Войти с помощью существующего аккаунта",
-        "en":"Login as existing account",
+        "ru":"Почта:",
+        "en":"Email:",
     },
     "" : {
         "ru":"",
         "en":"",
     },
     
-    //страница About Us
-
-    "We-are-a-team-of-passionate" : {
-        "ru":"Мы — команда увлеченных людей, стремящихся предоставить вам мем-контент высочайшего качества в Интернете. Мы считаем, что смех — лучшее лекарство, и стремимся приносить радость и юмор в ваш день.",
-        "en":"We are a team of passionate individuals dedicated to providing you with the highest quality meme content on the internet. We believe that laughter is the best medicine, and we are committed to bringing joy and humor to your day.",
+    "phone-num" : {
+        "ru":"Номер телефона:",
+        "en":"Phone number:",
     },
-    "Our-team-consists-of-experienced" : {
-        "ru":"Наша команда состоит из опытных создателей мемов, кураторов и энтузиастов. Мы постоянно ищем новейшие и лучшие мемы и постоянно работаем над улучшением нашей платформы.",
-        "en":"Our team consists of experienced meme creators, curators, and enthusiasts. We are constantly on the lookout for the latest and greatest memes, and we are always working to improve our platform.",
-    },
-    "We-are-committed" : {
-        "ru":"Мы стремимся обеспечить безопасную и инклюзивную среду для всех наших пользователей. Мы считаем, что у каждого должна быть возможность посмеяться, и мы стремимся создать сообщество, в котором каждый будет чувствовать себя желанным гостем.",
-        "en":"We are committed to providing a safe and inclusive environment for all of our users. We believe that everyone should have the opportunity to enjoy a good laugh, and we are dedicated to creating a community where everyone feels welcome.",
-    },
-    "About-Us2" : {
-        "ru":"О нас",
-        "en":"About Us",
-    },
-
     
-    "modalWindow1": {
-        "ru": "Сбор и использование личных данных.",
-        "en": "Collection and use of personal data."
-        },
-        "modalWindow2": {
-        "ru": "Мы собираем следующую личную информацию: имя, адрес электронной почты, номер телефона.",
-        "en": "We collect the following personal information: name, email address, phone number."
-        },
-        "modalWindow3": {
-        "ru": "Эта информация используется для предоставления вам услуг, отправки информации и связи с вами.",
-        "en": "This information is used to provide you with services, send you information, and communicate with you."
-        },
-        "modalWindow4": {
-        "ru": "Мы также собираем данные о вашем использовании сайта, такие как страницы, которые вы посещаете, и действия, которые вы совершаете.",
-        "en": "We also collect data about your use of the website, such as the pages you visit and the actions you take."
-        },
-        "modalWindow5": {
-        "ru": "Эти данные используются для улучшения наших услуг и персонализации контента.",
-        "en": "This data is used to improve our services and personalize the content."
-        },
-        "modalWindow6": {
-        "ru": "Мы применяем разумные меры безопасности для защиты вашей личной информации от несанкционированного доступа, раскрытия, изменения или уничтожения.",
-        "en": "We take reasonable security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction."
-        },
-        "modalWindow7": {
-        "ru": "Мы регулярно проверяем и обновляем наши меры безопасности в соответствии с последними технологическими разработками и изменениями в законодательстве.",
-        "en": "We regularly review and update our security measures in accordance with the latest technological developments and changes in legislation."
-        },
-        "modalWindow8": {
-        "ru": "Мы оставляем за собой право вносить изменения в эту политику конфиденциальности. Любые изменения будут опубликованы на нашем сайте, и мы уведомим вас об этом.",
-        "en": "We reserve the right to make changes to this privacy policy. Any changes will be published on our website and we will notify you about them."
-        }
+    "birth-date" : {
+        "ru":"Дата рождения:",
+        "en":"Birth date:",
+    },
+    
+    
 }

@@ -48,6 +48,7 @@ function ChangeTheme() {
 
 
 
+
 // Получаем элементы логотипов
 const logoImage1 = document.querySelector('.header-logo-container img:first-child');
 const logoImage2 = document.querySelector('.header-logo-container img:last-child');
@@ -60,15 +61,11 @@ function updateLogos() {
     logoImage2.src = 'logo-2-white.png';
   } else {
     // Светлая тема
-    
     logoImage1.src = 'logo-1.png';
     logoImage2.src = 'logo-2.png';
-    
   }
 }
 
 // Вызываем функцию при загрузке страницы и при переключении темы
 window.addEventListener('load', updateLogos);
 btn.addEventListener('click', updateLogos);
-
-

@@ -35,6 +35,7 @@ function changeLanguage() {
                 {}
             else {document.querySelector('.lng-input').placeholder = langArr[key][hash];}
         }
+        console.log(elems);
         elems.forEach(elem => {
             if (elem) {
                 elem.innerHTML = langArr[key][hash];

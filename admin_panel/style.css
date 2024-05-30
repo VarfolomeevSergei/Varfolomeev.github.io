@@ -108,7 +108,7 @@ header {
 } */
 
 .section-one {
-  background-image: url(../img/first-img.svg);
+  background-image: url(img/first-img.svg);
   background-repeat: no-repeat;
   font-size: clamp(
     26px,
@@ -952,6 +952,10 @@ footer {
   height: 40px;
 }
 
+.hidden{
+  display: none;
+}
+
 .footer-button-close {
   border: none;
   position: relative;
@@ -1077,11 +1081,11 @@ footer {
     transform: scale(1);
   }
 }
-/*  
+
 .section-four-card img {
   animation: scale 2s infinite;
 }
-*/
+
 /* Третья */
 
 @keyframes pulse {
@@ -1172,6 +1176,90 @@ footer {
 }
 
 
+
+
+
+.user_fname {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.user_mname {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.user_lname {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.user_phone {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.user_email {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.user_date {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.user_role {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+.user_header{
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+
+
 /* Стили для контейнера кнопки */
 .lng-theme {
   margin-left: 4%;
@@ -1198,8 +1286,4 @@ footer {
 .lng-theme.active {
   background-color: #333;
   color: #fff;
-}
-
-.hidden{
-  display: none;
 }

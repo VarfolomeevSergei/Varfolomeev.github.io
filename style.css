@@ -952,6 +952,10 @@ footer {
   height: 40px;
 }
 
+.hidden{
+  display: none;
+}
+
 .footer-button-close {
   border: none;
   position: relative;
@@ -1169,4 +1173,32 @@ footer {
 
 #burger:hover {
   animation: rotate 4s linear infinite;
+}
+
+/* Стили для контейнера кнопки */
+.lng-theme {
+  margin-left: 4%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Стили для кнопки при наведении */
+.lng-theme:hover {
+  background-color: #aee8fb;
+}
+
+/* Стили для активной кнопки */
+.lng-theme.active {
+  background-color: #333;
+  color: #fff;
 }

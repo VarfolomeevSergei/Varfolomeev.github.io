@@ -1,0 +1,41 @@
+.info{
+    height: 600px;
+}
+
+.form{
+    width: 600px;
+    margin: auto;
+}
+
+.login_label{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.label{
+    font-size: 1.5rem;
+}
+
+label{
+    font-size: 1.3rem;
+}
+
+.form label{
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 8%;
+    color:black;
+    margin-bottom: 5%;
+  }
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .form{
+        width: 300px;
+    }
+}

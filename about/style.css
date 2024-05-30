@@ -1185,3 +1185,6 @@ footer {
   color:black;
   margin-bottom: 5%;
 }
+.hidden{
+  display: none;
+}

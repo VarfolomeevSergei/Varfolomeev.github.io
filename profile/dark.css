@@ -113,30 +113,6 @@ background-color: #2f2f2f;
 .section-six h3{
     color: #ffffff;
 }
-/*для регистрации*/
-.sign-in{
-    background-color: #525252;
-}
-section{
-    background-color: #525252;
-}
-section label{
-    color: #ffffff;
-}
-.sign-up h2{
-    color: #ffffff;
-
-}
-.sign-in h2{
-    color: #ffffff;
-
-}
-.modalActive{
-    background-color: #525252;
-}
-.modalActive p{
-    color: #ffffff;
-}
-.modalClose{
-    color: #ffffff;
-}
+.form label{
+    color:#ffffff;
+  }

@@ -10,6 +10,73 @@
     font-family: 'Bitter';
     src: url('../assets/fonts/Bitter-Regular.ttf') format('truetype');
 }
+
+
+
+/*мой хэдр*/
+
+header {
+    margin: 0 15px;
+  }
+  
+  .flex-box-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-container {
+    margin: 0 auto;
+    padding-top: 12px;
+    max-width: 1180px;
+    padding-bottom: 16px;
+  }
+  
+  .header-logo-container {
+    height: 57px;
+    position: relative;
+  }
+  
+  .header-logo-container img {
+    display: inline-block;
+    margin: auto;
+    max-width: 66px;
+    max-width: 165px; 
+  }
+  
+  .header-second-logo {
+    position: absolute;
+    left: 57px;
+    
+  }
+  
+  .header-information {
+    width: 535px;
+    /* margin-right: 70px; */
+    padding-top: 27px;
+    
+    background-color: white;
+  }
+  
+  .header-information a {
+    text-decoration: none;
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: auto;
+  }
+  
+  .header-anchors {
+    display: none;
+  }
+/* */
+
+
+
+
+
 html, body{
     margin: 0;
     scroll-behavior: smooth;
@@ -50,7 +117,7 @@ a{
 main, .header-container{
     margin: 0 auto;
     max-width: 1150px;
-}
+}/*
 header{
     box-shadow: 0px 1px 6px 0px rgba(83, 109, 122, 0.29);
     border-bottom: 2px solid rgba(83, 109, 122, 0.24);
@@ -73,7 +140,7 @@ header{
 .header-container .affiliate-logo{
     margin: 0.1px 0 0 0;
     width: 155px;
-}
+}*/
 main{
     display: flex;
     flex-direction: column;
@@ -141,9 +208,6 @@ form button:last-child{
     font-size: 15px;
     line-height: 20px;
 }
-.hidden{
-    display: none;
-}
 form div{
     display: flex;
     gap: 5px;
@@ -174,7 +238,7 @@ span{
     background: #7495a0;
     color: #474747;
     cursor: default;
-}
+}/*
 @media (max-width: 1439px) {
     main, header{
         padding: 0 10.5%;
@@ -184,7 +248,7 @@ span{
     .header-container div {
         gap: 29.52px;
     }
-}
+}*/
 body.dark-mode, 
 body.dark-mode #theme-button-p,
 body.dark-mode img
@@ -409,64 +473,6 @@ form div{
 
 
 
-/*мой хэдр*/
-
-header {
-    margin: 0 15px;
-  }
-  
-  .flex-box-between {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .header-container {
-    margin: 0 auto;
-    padding-top: 12px;
-    max-width: 1180px;
-    padding-bottom: 16px;
-  }
-  
-  .header-logo-container {
-    height: 57px;
-    position: relative;
-  }
-  
-  .header-logo-container img {
-    display: inline-block;
-    margin: auto;
-    max-width: 66px;
-    max-width: 165px;
-  }
-  
-  .header-second-logo {
-    position: absolute;
-    left: 57px;
-    
-  }
-  
-  .header-information {
-    width: 535px;
-    /* margin-right: 70px; */
-    padding-top: 27px;
-    
-    background-color: white;
-  }
-  
-  .header-information a {
-    text-decoration: none;
-    color: #000;
-    font-family: Roboto;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    height: auto;
-  }
-  
-  .header-anchors {
-    display: none;
-  }
 
 
   /*футер*/
@@ -614,4 +620,148 @@ footer {
   
   .footer-button-close span:nth-child(2) {
     transform: rotate(-45deg);
+  }
+  .hidden{
+    display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*terms of use
+  /* убираем нижний ползунок прокрутки */
+body {
+    overflow-x: hidden;
+}
+
+/* фон нашего модального окна */
+.modalBackground {
+    margin-left: -50%;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+     position: fixed; 
+    width: 40000px;
+    height: 40000px;
+    cursor: pointer;
+    /* указываем z-индекс для корректного наслаивания */
+    z-index: 1;
+}
+
+/* позиционирование самого модального окна */
+.modalActive {
+    position: fixed;
+    width: 350px;
+    height: 495px;
+    top: calc(50% - 250px);
+    left: calc(50% - 175px);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+}
+
+/* кнопочка закрытия модального окна */
+.modalClose {
+    font-family: var(--font-regular);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+/* сама картинка кнопочки закрытия */
+.modalClose img {
+    margin: 3px;
+    width: 24px;
+    height: 24px;
+}
+
+/* делаем позиционирование внутренних элементов относительно модального окна */
+.modalWindow {
+    position: relative;
+}
+
+.lng-create1 {
+    display: inline-block;
+    color: #0077b6;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lng-create1:hover {
+    color: #005a8e;
+}
+
+
+/* Стили для контейнера кнопки */
+.lng-theme {
+    margin-left: 11%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Стили для кнопки при наведении */
+  .lng-theme:hover {
+    background-color: #aee8fb;
+  }
+  
+  /* Стили для активной кнопки */
+  .lng-theme.active {
+    background-color: #333;
+    color: #fff;
+  }
+
+  
+
+
+  .logout2 {
+    margin-left: 4%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Стили для кнопки при наведении */
+  .logout2:hover {
+    background-color: #aee8fb;
+  }
+  
+  /* Стили для активной кнопки */
+  .logout2.active {
+    background-color: #333;
+    color: #fff;
   }

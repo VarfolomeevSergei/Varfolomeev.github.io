@@ -1,5 +1,6 @@
 /*import { darkThemeSetup } from "../registration/dark-theme.js";*/
-
+setGuestInLocalStorage();
+CheckUser(); 
 const sendUpFormButton = document.getElementById('sign-up-send');
 const signUpButton = document.getElementById('sign-up-button');
 const signInButton = document.getElementById('sign-in-button');
@@ -7,11 +8,13 @@ const signUp = document.querySelector('.sign-up')
 const signIn = document.querySelector('.sign-in')
 const signUpForm = document.querySelector('.sign-up form')
 const signInForm = document.querySelector('.sign-in form')
-
+const modal = false;
 const visiblePasswordButton = document.getElementById('visible-password-button');
 const generatePasswordButton = document.getElementById('generate-password-button');
 const passwordInput = document.getElementById('create-password');
 const passwordConfirm = document.getElementById('confirm-password');
+
+var usersArray = JSON.parse(localStorage.getItem("usersData"));
 
 const generateLoginButton = document.getElementById('generate-login-button');
 const loginInput = document.getElementById('create-login');
@@ -30,6 +33,7 @@ const loginUpLabel = document.getElementById('login-up-label');
 const passwordUpLabel = document.getElementById('password-up-label');
 const confirmPasswordLabel = document.getElementById('confirm-password-label');
 const termsOfUseLabel = document.getElementById('terms-of-use-label');
+
 
 signUpButton.addEventListener('click', function(){
     signIn.classList.add('hidden');
@@ -123,7 +127,12 @@ signInForm.addEventListener('submit', async function(event) {
     }   
     if(numberOfUser != -1){
         alert('Hello, ' + roles[numberOfUser]);
+        localStorage.setItem('currUser', roles[numberOfUser]);
         signInForm.reset();
+//---------------------------------------
+        localStorage.setItem('currUserId', usersArray.findIndex((x)=>x.login && x.password == password.toString()))
+//---------------------------------------
+        location.reload();
     } else {
         alert('Invalid login or password');
     }
@@ -348,7 +357,18 @@ async function checkValidUpForm() {
     } else{
         termsOfUseLabel.classList.remove('msg-empty');
     }
+
+    if(!modal)
+    {
+        termsOfUseLabel.className = 'msg-empty';
+        disableSubmit();
+        return;
+    }else{
+        termsOfUseLabel.classList.remove('msg-empty');
+    }
+
     setSubmitActive();
+    
 }
 signUpForm.addEventListener('input', function(){
     checkValidUpForm();
@@ -359,3 +379,136 @@ async function main(){
 }
 
 main();
+async function getCurrentUserData() {
+    try {
+        const data = localStorage.getItem('currUser');
+        if (!data) {
+            throw new Error('No data found in localStorage');
+        }
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+async function setGuestInLocalStorage() {
+    let currUserData = await getCurrentUserData();
+    if (currUserData != null || currUserData != undefined) {
+        return;
+    }
+    localStorage.setItem('currUser', "guest");
+}
+
+
+
+//проверка на роль пользователя
+async function CheckUser() {
+    const data = localStorage.getItem('currUser');
+    if(data == "guest")
+        {
+            document.querySelector(".admin_panel123").classList.add("hidden");
+            document.querySelector(".profile123").classList.add("hidden");
+        }
+    if(data == "user")
+    {
+        
+        // document.querySelector().classList.remove("hidden");
+        // document.querySelector().classList.add("hidden");
+        // document.querySelector().classList.add("hidden");
+    }
+    else if(data == "admin"){
+        if(document.querySelector(".section-six"))
+            {
+                document.querySelector(".section-six").classList.remove("hidden");
+            }
+        //
+        if(document.querySelector(".admin_panel123"))
+            {
+                document.querySelector(".admin_panel123").classList.remove("hidden");
+            }
+        // document.querySelector().classList.remove("hidden");
+        // document.querySelector().classList.add("hidden");
+        // document.querySelector().classList.add("hidden");
+
+    }else {return;}
+}
+
+
+
+
+document.getElementById('exit').addEventListener('click', function () {
+    localStorage.setItem('currUser', "guest");
+    localStorage.setItem('theme', "light");
+    localStorage.setItem('language', "en");
+    location.reload();
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //terms of use
+  // устанавливаем триггер для модального окна (название можно изменить)
+const modalTrigger = document.getElementsByClassName("lng-termsofuse")[0];
+
+// получаем ширину отображенного содержимого и толщину ползунка прокрутки
+const windowInnerWidth = document.documentElement.clientWidth;
+const scrollbarWidth = parseInt(window.innerWidth) - parseInt(windowInnerWidth);
+
+// привязываем необходимые элементы
+const bodyElementHTML = document.getElementsByTagName("body")[0];
+const modalBackground = document.getElementsByClassName("modalBackground")[0];
+const modalClose = document.getElementsByClassName("modalClose")[0];
+const modalActive = document.getElementsByClassName("modalActive")[0];
+
+// функция для корректировки положения body при появлении ползунка прокрутки
+function bodyMargin() {
+    bodyElementHTML.style.marginRight = "-" + scrollbarWidth + "px";
+}
+
+// при длинной странице - корректируем сразу
+bodyMargin();
+
+// событие нажатия на триггер открытия модального окна
+modalTrigger.addEventListener("click", function () {
+    // делаем модальное окно видимым
+    modalBackground.style.display = "block";
+
+    // если размер экрана больше 1366 пикселей (т.е. на мониторе может появиться ползунок)
+    if (windowInnerWidth >= 1366) {
+        bodyMargin();
+    }
+
+    // позиционируем наше окно по середине, где 175 - половина ширины модального окна
+    modalActive.style.left = "calc(50% - " + (175 - scrollbarWidth / 2) + "px)";
+    modal   =   true;
+});
+
+// нажатие на крестик закрытия модального окна
+modalClose.addEventListener("click", function () {
+    modalBackground.style.display = "none";
+    if (windowInnerWidth >= 1366) {
+        bodyMargin();
+    }
+});
+
+// закрытие модального окна на зону вне окна, т.е. на фон
+modalBackground.addEventListener("click", function (event) {
+    if (event.target === modalBackground) {
+        modalBackground.style.display = "none";
+        if (windowInnerWidth >= 1366) {
+            bodyMargin();
+        }
+    }
+});
