@@ -1203,3 +1203,8 @@ footer {
 .hidden{
   display: none;
 }
+
+.section-four-button:hover{
+  background-color: white;
+  cursor: pointer;
+}

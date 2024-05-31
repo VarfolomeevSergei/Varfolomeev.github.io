@@ -280,7 +280,35 @@ const langArr = {
         "ru":"Дизайн бренда от Provoke",
         "en":"Brand Design by Provoke",
     },
-    
+
+    "" : {
+        "ru":"",
+        "en":"",
+    },
+    "Take-a-training-course" : {
+        "ru":"Пройти тренинг",
+        "en":"Take a training course",
+    },
+    "Take-a-training-course2" : {
+        "ru":"Пройти тренинг",
+        "en":"Take a training course",
+    },
+    "Take-a-training-course3" : {
+        "ru":"Пройти тренинг",
+        "en":"Take a training course",
+    },
+    "Take-a-training-course4" : {
+        "ru":"Пройти тренинг",
+        "en":"Take a training course",
+    },
+    "Take-a-training-course5" : {
+        "ru":"Пройти тренинг",
+        "en":"Take a training course",
+    },
+    "Take-a-training-course6" : {
+        "ru":"Пройти тренинг",
+        "en":"Take a training course",
+    },
 
     
 }
