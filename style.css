@@ -70,7 +70,12 @@ header {
   display: inline-block;
   margin: auto;
 }
-
+/* ----------------------------------------- */
+.header-first-logo{
+  height: 57px;
+  width: 66px;
+}
+/* ----------------------------------------- */
 .header-second-logo {
   position: absolute;
   left: 57px;

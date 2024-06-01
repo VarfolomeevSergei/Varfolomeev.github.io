@@ -14,13 +14,35 @@
     flex-wrap: wrap;
     row-gap: 20px;
   }
+  
 
-  .section-four-card {
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 890px) {
+  
+  .lng-theme {
+    /* Стили для кнопки на экранах с шириной меньше 768px */
+    padding: 10px; /* Уменьшаем отступы */
+    font-size: 0; /* Убираем текст */
+    width: 40px; /* Задаем ширину */
+    height: 40px; /* Задаем высоту */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    display: flex; /* Включаем flexbox для позиционирования */
+    align-items: center; /* Выравниваем по центру */
+    justify-content: center; /* Выравниваем по центру */
+  }
+
+  .lng-theme::before {
+    /* Стили для псевдоэлемента before */
+    content: ""; /* Убираем дефолтное содержание */
+    background-image: url("img/theme.jpg"); /* Задаем путь к SVG-иконке */
+    background-size: contain; /* Помещаем иконку по размеру */
+    background-repeat: no-repeat; /* Запрещаем повторение иконки */
+    width: 20px; /* Задаем ширину иконки */
+    height: 20px; /* Задаем высоту иконки */
+  }
+  
+
   .header-information {
     display: none;
   }
@@ -114,6 +136,22 @@
     background: #000;
     margin: auto auto;
   }
+
+  .section-four-card {
+    margin: 0 auto;
+  }/* ----------------------------------------- */
+/*   
+  .header-first-logo{
+    width: 36px;
+    height: 34px;
+  }
+  .header-second-logo {
+    width: 100px;
+  } 
+  .header-logo-container img {
+    max-width: 100px;
+  } */
+  /* ----------------------------------------- */
 }
 
 @media (max-width: 500px) {
