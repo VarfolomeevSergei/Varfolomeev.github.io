@@ -67,7 +67,7 @@ header {
 }
 
 .header-logo-container img {
-  display: inline-block;
+  /* display: inline-block; */
   margin: auto;
 }
 

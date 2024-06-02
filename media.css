@@ -139,18 +139,21 @@
 
   .section-four-card {
     margin: 0 auto;
-  }/* ----------------------------------------- */
-/*   
+  }/* ----------------------------------------- */          
+ 
   .header-first-logo{
     width: 36px;
     height: 34px;
-  }
+   }/*
   .header-second-logo {
     width: 100px;
-  } 
+  }  */
   .header-logo-container img {
     max-width: 100px;
-  } */
+  }  
+  .header-second-logo{
+    display: none;
+  } 
   /* ----------------------------------------- */
 }
 

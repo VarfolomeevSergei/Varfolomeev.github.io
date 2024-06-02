@@ -37,7 +37,7 @@ header {
   }
   
   .header-logo-container img {
-    display: inline-block;
+    /* display: inline-block; */
     margin: auto;
     max-width: 66px;
     max-width: 165px; 
@@ -322,7 +322,7 @@ form div{
     .msg-digit-password, 
     .msg-letter-password, 
     .msg-speshal-symbol-password,
-    .msg-match-password{
+    .msg-match-password{ 
         height: 39px;
     }
     ::after,
@@ -395,6 +395,26 @@ form div{
         top: 114px
     }
 }
+@media (max-width: 768px) {
+    
+  
+    /* ----------------------------------------- */          
+   
+    .header-first-logo{
+      width: 36px;
+      height: 34px;
+     }/*
+    .header-second-logo {
+      width: 100px;
+    }  */
+    .header-logo-container img {
+      max-width: 100px;
+    }  
+    .header-second-logo{
+      display: none;
+    } 
+    /* ----------------------------------------- */
+  }
 @media (max-width: 628px){
     form button:first-child {
         width: 100px;
