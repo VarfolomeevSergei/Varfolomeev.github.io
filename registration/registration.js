@@ -350,23 +350,24 @@ async function checkValidUpForm() {
     } else{
         confirmPasswordLabel.classList.remove('msg-match-password');
     }  
+    
     if(termsOfUse == '' || termsOfUse == null){
         termsOfUseLabel.className = 'msg-empty';
-        disableSubmit();
+         disableSubmit();
         return;
-    } else{
-        termsOfUseLabel.classList.remove('msg-empty');
-    }
-
+    }  else{
+         termsOfUseLabel.classList.remove('msg-empty');
+     }
+     /*
     if(!modal)
     {
         termsOfUseLabel.className = 'msg-empty';
-        disableSubmit();
+        // disableSubmit();
         return;
     }else{
-        termsOfUseLabel.classList.remove('msg-empty');
+        termsOfUseLabel.classList.remove('msg-empty'); 
     }
-
+*/
     setSubmitActive();
     
 }
