@@ -3,8 +3,9 @@
 }
 
 .form{
-    width: 600px;
+    max-width: 600px;
     margin: auto;
+    display: inline;
 }
 
 .login_label{
@@ -39,3 +40,9 @@ label{
         max-width: 300px;
     }
 }
+@media (max-width: 584px) {
+    .form label{
+        font-size: 20px;
+        margin-top: -5%;
+    }
+}  
